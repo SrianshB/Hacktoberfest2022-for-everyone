@@ -3,7 +3,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = {-1,0,3,5,9,12};
+		int[] nums = {-1,0,3,5,9,12};//pre-defined array for the program
 		System.out.println(search(nums,2));
 	}
 	
@@ -13,6 +13,11 @@ public class BinarySearch {
     }
 	
 	static int binarySearch(int[] nums, int low, int high, int target) {
+		//low, high & mid are pointers
+		//low pointer points to the starting of the array
+		//high pointer points to the end of the array
+		//mid pointer points to the calculated middle element of the array
+		//target is the element that the user wants to search for
 		if(high >= low) {
 			if(nums[low] == target) return low;
 			if(nums[high] == target) return high;
